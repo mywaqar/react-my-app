@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+function App(props) {
+    return <div> 
+            <p>Hello, <strong>{props.fullName}</strong><br/>Your family tree is as below</p>
+            <hr/>
+            <h3>Parents</h3>
+            <ul>
+                <li>Mr. Aftab Ahmed </li>
+                <li>Mrs. Shagufta Tabassam</li>
+           </ul>
+           <hr/>
+           <h3>Siblings</h3>
+           <ol>
+               <li>Waqar Azeem</li>
+               <li>Abrar Ahmed</li>
+               <li>Amina Aftab</li>
+               <li>Umer Aftab</li>
+               <li>Mohammed Fahad</li>
+           </ol>
+          </div>
+    };
 
 export default App;
