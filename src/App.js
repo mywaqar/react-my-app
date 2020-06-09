@@ -4,7 +4,7 @@ import './App.css';
 
 function App(props) {
     return <div> 
-            <p>Hello, <strong>{props.fullName}</strong><br/>Your family tree is as below</p>
+            <p>Hello, <strong>{props.fullName}</strong><br/>Your family tree is here</p>
             <hr/>
             <h3>Parents</h3>
             <ul>
